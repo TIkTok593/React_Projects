@@ -1,24 +1,21 @@
 import logo from './logo.svg';
+import Styling from './Styling.js'
+import { Ternary } from './Ternary';
 import './App.css';
 
 function App() {
+  var generateRandomNumber = () => Math.random() * 10 | 0
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Styling>
+        <div>kasdjflkasdjfkl</div>
+        <div>kasdjflkasdjfkl</div>
+        <div>kasdjflkasdjfkl</div>
+        <div>kasdjflkasdjfkl</div>
+        dasfkljsadlfjksadf
+        ksadfjls.a,djlfsjdakfj
+        <Ternary/>
+        <p>{generateRandomNumber()}</p>
+      </Styling>
   );
 }
 
